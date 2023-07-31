@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@400;500;700&family=Roboto+Mono&family=Roboto:ital,wght@0,100;0,500;1,400&display=swap" rel="stylesheet">
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      /* .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      } */
+      *{
+        font-family: 'Hanken Grotesk', sans-serif;
+      }
+      body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items:center;
+        justify-content:center;
+      }
+      .Hero{
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 750px; */
+        justify-content: center;
+        /* align-items: center; */
+        margin: 0 auto;
+        border-radius: 25px;
+        box-shadow: 2px 2px 10px hsl(221, 100%, 96%);
+      }
+      #score-card{
+        background: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 375px;
+        border-radius: 25px;
+      }
+      .circle{
+        background: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0)) ;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        line-height: 5px;
+        justify-content: center;
+        align-items: center;
+
+      }
+      #result{
+        font-size: 22px;
+        color: hsl(221, 100%, 96%);
+        font-family: 'Hanken Grotesk', sans-serif;
+      }
+      #num76{
+        color: white;
+        font-size: 50px;
+      }
+      .circle p{
+        color: hsl(221, 100%, 96%);
+      }
+      #score-card h2{
+        color: white;
+      }
+      #text{
+        width: 55%;
+        color: hsl(221, 100%, 96%);
+        font-size: 14px;
+        font-weight: lighter;
+      }
+      #summary-card{
+        display: flex;
+        flex-direction: column;
+        width: 325px;
+        padding: 25px 25px;
+      }
+      #summary-card div{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px 0;
+        padding: 10px ;
+        
+      }
+      .reaction-div{
+        background-color: hsla(0, 100%, 67%, 0.135);
+      }
+      .memory-div{
+        background-color: hsla(39, 100%, 56%, 0.135);;
+      }
+      .verbal-div{
+        background-color: hsla(166, 100%, 37%, 0.135);
+      }
+      .visual-div{
+        background-color: hsla(234, 52%, 59%, 0.135);
+      }
+      #reaction{
+        color: hsl(0, 100%, 67%);
+      }
+      #memory{
+        color: hsl(39, 100%, 56%);
+      }
+      p#Verbal{
+        color: hsl(166, 100%, 37%);
+      }
+      p#Visual{
+        color: hsl(234, 52%, 59%);
+      }
+      span{
+        color: grey;
+      }
+      #summary-card div{
+        margin-bottom: 10px;
+        border-radius: 10px;
+      }
+      button{
+        margin: 10px 60px;
+        padding: 10px ;
+        background-color: hsl(224, 30%, 27%);
+        border-style: none;
+        border-radius: 25px;
+        color: white;
+      }
+      p#summary-text {
+        font-size: 22px;
+        color: hsl(224, 30%, 27%);
+        margin-bottom: 20px;
+      }
+      #summary-card p {
+        margin: 0;
+      }
+      svg{
+        height: 14px;
+        width: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- main div hero -->
+    <div class="Hero" >
+      <!-- blue box 1  -->
+      <div id="score-card" >
+        <p id="result">Your Result</p>
+        <div class="circle">
+          <h1 id="num76">76</h1>
+          <p>of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p id="text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+
+      <!-- second summery box 2 -->
+      <div id="summary-card" >
+        <p id="summary-text">Summary</p>
+          <div class="reaction-div">
+            <p id="reaction"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 15"><path stroke="#F55" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10.833 8.333V2.5l-6.666 9.167h5V17.5l6.666-9.167h-5Z"/></svg> Reaction</p>
+            <p>80<span>/ 100</span></p>
+          </div>
+          <div class="memory-div" >
+            <p id="memory"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 15"><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M5.833 11.667a2.5 2.5 0 1 0 .834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M3.553 13.004a3.333 3.333 0 0 1-.728-5.53m.025-.067a2.083 2.083 0 0 1 2.983-2.824m.199.054A2.083 2.083 0 1 1 10 3.75v12.917a1.667 1.667 0 0 1-3.333 0M10 5.833a2.5 2.5 0 0 0 2.5 2.5m1.667 3.334a2.5 2.5 0 1 1-.834 4.858"/><path stroke="#FFB21E" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M16.447 13.004a3.334 3.334 0 0 0 .728-5.53m-.025-.067a2.083 2.083 0 0 0-2.983-2.824M10 3.75a2.085 2.085 0 0 1 2.538-2.033 2.084 2.084 0 0 1 1.43 2.92m-.635 12.03a1.667 1.667 0 0 1-3.333 0"/></svg>Memory</p>
+            <p>92<span>/ 100</span></p>
+          </div>
+          <div class="verbal-div">
+            <p id="Verbal"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 15"><path stroke="#00BB8F" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.5 10h5M10 18.333A8.333 8.333 0 1 0 1.667 10c0 1.518.406 2.942 1.115 4.167l-.699 3.75 3.75-.699A8.295 8.295 0 0 0 10 18.333Z"/></svg>Verbal</p>
+            <p>61<span>/ 100</span></p>
+          </div>
+          <div class="visual-div">
+            <p id="Visual"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" viewBox="0 0 20 15"><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M10 11.667a1.667 1.667 0 1 0 0-3.334 1.667 1.667 0 0 0 0 3.334Z"/><path stroke="#1125D6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M17.5 10c-1.574 2.492-4.402 5-7.5 5s-5.926-2.508-7.5-5C4.416 7.632 6.66 5 10 5s5.584 2.632 7.5 5Z"/></svg>Visual</p>
+            <p>72<span>/ 100</span></p>
+          </div>
+        <button>Continue</button>
+      </div>
+
+    </div>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Vicky Kumar</a>.
+    </div> -->
+  </body>
+</html>
