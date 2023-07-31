@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 130vh;
+    background-color: hsl(30, 38%, 92%);
+    
+}
+
+.hero{
+    margin-top: 30vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+.image-div img{
+    width: 375px;
+    height: 400px;
+}
+
+.second{
+    width: 375px;
+    height: 400px;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 2px 2px 2px #fff;
+}
+
+#perfume{
+    height: 8px;
+    letter-spacing: 7px;
+    font-size: 12px;
+}
+
+.product-name{
+    width: 75%;
+    height: 24%;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+#discription{
+    font-size: 17px;
+    margin-top:35px;
+    line-height: 22px;
+    color: hsl(228, 12%, 48%);
+}
+.price{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    height: 70px;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    
+}
+
+button{
+  margin-top: 7px;
+  padding: 10px 84px;
+  background-color: hsl(158, 36%, 37%);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+
+}
+button svg{
+    margin-right: 10px;
+}
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
+
+#perfume,#discription,h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+#perfume, #discription, h5{
+   color: hsl(228, 12%, 48%);
+}
