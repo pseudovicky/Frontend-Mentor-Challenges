@@ -86,6 +86,7 @@ button{
     color: hsl(224, 23%, 55%);
     font-weight: 700;
 }
+
 #pay-button{
     background-color: hsl(245, 75%, 52%);
     color: white;
@@ -93,12 +94,13 @@ button{
     box-shadow: 0px 3px 8px hsl(224, 23%, 55%);
     margin-top: 25px;
 }
+
 a{
     color: hsl(245, 75%, 52%);
     font-size: 14px;
 }
 
-#cancle{
+#cancel{
     margin-top: 15px;
     margin-bottom: 30px;
 }
