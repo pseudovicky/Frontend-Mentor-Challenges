@@ -8,10 +8,12 @@
     font-family: 'Outfit', sans-serif;
  */
 }
+
 #main{
     background-color: transparent hsl(277, 64%, 61%);
     z-index: 999;
 }
+
 .hero{
     display: flex;
 }
