@@ -1,7 +1,7 @@
-*{
-    box-sizing: border-box;
-    /* font-size: 15px; */
-    /* font-family: 'Fraunces', serif;
+* {
+  box-sizing: border-box;
+  /* font-size: 15px; */
+  /* font-family: 'Fraunces', serif;
     font-family: 'Inter', sans-serif;
     font-family: 'Lexend Deca', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -9,15 +9,21 @@
  */
 }
 
-#main{
-    background-color: transparent hsl(277, 64%, 61%);
-    z-index: 999;
+#main {
+  background-color: transparent hsl(277, 64%, 61%);
+  z-index: 999;
 }
 
-.hero{
-    display: flex;
+.hero {
+  display: flex;
+  width: 80%;
 }
 
-.box1{
-    
+.box1 {
+  width: 50%;
+  background-color: green;
+}
+.box2 {
+  width: 50%;
+  background-color: red;
 }
