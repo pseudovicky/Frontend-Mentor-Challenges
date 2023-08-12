@@ -1,12 +1,6 @@
 * {
   box-sizing: border-box;
   
-  /* font-family: 'Fraunces', serif;
-    font-family: 'Inter', sans-serif;
-    font-family: 'Lexend Deca', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Outfit', sans-serif;
- */
 }
 
 #main {
@@ -23,12 +17,14 @@
 
 .box1 {
   width: 50%;
-  padding: 20px 130px;
+  padding: 20px 100px;
   background-color: hsl(244, 38%, 16%);
 }
 p{
   font-size: 15px;
   color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
 }
 
 .box2{
@@ -38,6 +34,8 @@ p{
 
 h1, h2{
   color: hsl(0, 0%, 100%);
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
 }
 
 #insights{
@@ -45,4 +43,7 @@ h1, h2{
 }
 #stats-para{
   color: hsla(0, 0%, 100%, 0.6);
+}
+h2{
+  font-weight: 400;
 }
