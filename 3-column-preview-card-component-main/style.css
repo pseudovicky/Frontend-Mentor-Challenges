@@ -1,72 +1,69 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-body{
-    width: 100vw;
+body {
+  width: 100vw;
 }
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20vh;
-}
-
-.main div{
-    padding: 50px 30px;
-    height: 60vh;
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
 }
 
-#box1{
-    background-color: hsl(31, 77%, 52%);
+.main div {
+  padding: 50px 30px;
+  height: 60vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-#box2{
-    background-color: hsl(184, 100%, 22%);
+#box1 {
+  background-color: hsl(31, 77%, 52%);
 }
 
-#box3{
-    background-color: hsl(179, 100%, 13%);
+#box2 {
+  background-color: hsl(184, 100%, 22%);
 }
 
-p{
-    color: hsla(0, 0%, 100%, 0.75);
-    width: 230px;
-    font-size: 15px;
-    font-family: 'Lexend Deca', sans-serif;
-    font-weight: 400;
+#box3 {
+  background-color: hsl(179, 100%, 13%);
 }
 
-h1{
-    font-family: 'Big Shoulders Display', cursive;
-    color: hsl(0, 0%, 95%);
-    font-weight: 700;
-    text-transform: uppercase;
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  width: 230px;
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
 }
 
-
-button{
-    
-    border: none;
-    width: 60%;
-    padding: 10px 0;
-    border-radius: 25px;
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsl(0, 0%, 95%);
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-#button1{
-    color: hsl(31, 77%, 52%);
-}
-#button2{
-    color: hsl(184, 100%, 22%);
+button {
+  border: none;
+  width: 60%;
+  padding: 10px 0;
+  border-radius: 25px;
 }
 
-#button3{
-    color: hsl(179, 100%, 13%);
+#button1 {
+  color: hsl(31, 77%, 52%);
+}
+#button2 {
+  color: hsl(184, 100%, 22%);
+}
+
+#button3 {
+  color: hsl(179, 100%, 13%);
 }
